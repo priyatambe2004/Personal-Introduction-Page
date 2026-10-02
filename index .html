@@ -17,7 +17,7 @@
       --space: 1.5rem;
     }
 
-    /* 2. Element selectors: base styles */
+   
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -40,7 +40,7 @@
     a { color: var(--teal); }
     a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
-    /* 3. Class selectors: page layout (sidebar + content) */
+    
     .page {
       display: grid;
       grid-template-columns: 20rem 1fr;
@@ -64,7 +64,7 @@
     .content { padding: 3rem clamp(1.5rem, 6vw, 5rem); }
     .section { margin-bottom: 3rem; }
 
-    /* 4. Descendant selector: skills as small pill tags */
+
     .skills-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
     .skills-list li {
       background: #fff;
@@ -76,10 +76,10 @@
     }
     .skills-list li:hover { background: var(--accent); }
 
-    /* 5. ID selector: one-off highlight (higher specificity than a class) */
+    
     #contact { border-left: 6px solid var(--accent); padding-left: var(--space); }
 
-    /* 6. Responsive: stack on small screens */
+ 
     @media (max-width: 760px) {
       .page { grid-template-columns: 1fr; }
       h1 { font-size: 2.1rem; }
@@ -90,7 +90,7 @@
   <div class="page">
 
     <header class="sidebar">
-      <!-- Replace the src below with your own photo, e.g. src="me.jpg" -->
+      
       <img class="profile-img" alt="Profile photo of Priya Tambe"
         src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231f7a8c'/><text x='50' y='64' font-size='42' text-anchor='middle' fill='white' font-family='sans-serif'>PT</text></svg>">
       <h1>Priya Tambe</h1>
